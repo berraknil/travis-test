@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '6'
-- '6.1'
+
 deploy:
   provider: releases
   api_key:
@@ -14,4 +14,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: berraknil/travis-test
+    all_branches: true
