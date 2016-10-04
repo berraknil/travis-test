@@ -1,4 +1,17 @@
 language: node_js
 node_js:
-  - "6"
-  - "6.1"
+- '6'
+- '6.1'
+deploy:
+  provider: releases
+  api_key:
+    secure: f6NMt40Hn0lHv2CYyw+m+ohRCGccXcmzbReDuMOmnnOOBejRVRTRFD7Zk3Bq55IwObDMRWjyR1c/EHwPbV0QYxtSuSDFZ7BUqHl8o5E39NB8cMYmsU/Rs5WoVUkO3Rwcxq9sBoOB6Xl4Vd88yCJ6hg0xCGtOk7i9Nja6/RZk40CK5iw9X/s6h469rQGm1PFNvuOrknXA8DRFqewXOILlsodfDWaIr3khY+yIXCbjhxeCKVBvzt0W0WRSAZh6ny0r2Ek0CFiixhS3xPTFklb8BuquJL86L48Au/6GMXtHxd37/PDEnLtbFM0+1C7ewBLWjYkj58aWbhbIzeQJOdW+cweczRTZT4Qop1aHu3Ft7hRUBTlRLd4RpHyqVX+0x7hjsEMKhvDFsD6fEzlmcUFdjajLMQ6zQlGY++KgcV1oMGXYPA+TMksOjjBGdKN1/6blt0jOrxOnYWoXV88yNOy1uns1bZ9Ektg3E9pwu9CxHNOn/EldV7RMovxe+42ko6Pryw6hrFthV5v4EaQbceJopoU0TrIgzpHZG3IFaQ5xlIErsUssTPjQN0g8eHDBGJX2b9vd9kcHkyelG6pvTsChIl2Uefi1yjHhYnec0gE71Zax17EPj+9tw1QqEjC3Y+mDwC3ZMbS3SeJY0ohDygLdq6RYhfDEHefGB1MVGYz/ghY=
+  file:
+    - "README.md"
+    - "index.html"
+    - "index.js"
+    - "index.css"
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: berraknil/travis-test
